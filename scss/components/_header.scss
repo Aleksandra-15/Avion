@@ -1,0 +1,33 @@
+.header {
+
+
+  &__apps {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    margin: 0;
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    gap: 44px;
+  }
+ &__posilannya{
+    @include desc($color_2, 16px);
+
+ }
+  &__titel {
+    @include titel($color_1, 24px);
+    text-align: center;
+  }
+  &__icons {
+    color: $color_1;
+  }
+}
