@@ -1,7 +1,17 @@
-a{
-    text-decoration: none;
-
+a {
+  text-decoration: none;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
+}
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  @media (max-width: 480px) {
+    width: 480px;
+  }
+  @media (max-width: 480px) {
+  }
+  @media (max-width: 1400px) {
+  }
 }

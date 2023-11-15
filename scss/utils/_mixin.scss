@@ -1,17 +1,16 @@
-@mixin titel ($color, $size ){
-  color: $color_1 ;
+@mixin titel($color, $size) {
+  color: $color_1;
   font-family: Clash Display;
   font-size: $size;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-
 }
-@mixin desc($color, $size ){
-    color: $color;
-    font-family: Satoshi;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+@mixin desc($color, $size) {
+  color: $color;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

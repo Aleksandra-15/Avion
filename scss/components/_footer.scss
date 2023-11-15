@@ -1,0 +1,103 @@
+.footer {
+  padding: 58px 0;
+  background: var(--Dark-Primary, $background__1);
+  &__div {
+    display: flex;
+    align-items: start;
+    gap: 133px;
+  }
+  .menu {
+    &__list {
+      display: flex;
+      gap: 12px;
+      flex-direction: column;
+    }
+    &__link {
+      @include desc($color_3, 14px);
+    }
+    &__titel {
+      @include desc($color_3, 16px);
+    }
+  }
+  .Categories {
+    &__list {
+      display: flex;
+      gap: 12px;
+      flex-direction: column;
+    }
+    &__link {
+      @include desc($color_3, 14px);
+    }
+    &__titel {
+      @include desc($color_3, 16px);
+    }
+  }
+  .our {
+    &__list {
+      display: flex;
+      gap: 12px;
+      flex-direction: column;
+    }
+    &__link {
+      @include desc($color_3, 14px);
+    }
+    &__titel {
+      @include desc($color_3, 16px);
+    }
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  &__form {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__hr {
+    background: $background__2;
+  }
+  &__input {
+    background: rgba(255, 255, 255, 0.15);
+    width: 354px;
+    height: 56px;
+    color: var(--Dark-Primary, #2a254b);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    padding: 0px 0 0px 32px;
+    &:hover {
+      border: 1px dashed $color_4;
+    }
+  }
+  &__btn {
+    @include desc($color_4, 16px);
+    background: var(--Dark-Primary, $color_3);
+    width: 118px;
+    height: 56px;
+    border: 0;
+  }
+  &__label {
+    @include desc($color_3, 16px);
+  }
+  .plasa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+    &__titel {
+      @include desc($color_3, 14px);
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 24px;
+    }
+  }
+}

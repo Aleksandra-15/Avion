@@ -9,9 +9,17 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__icons" href="#"
-          ><i class="fa-solid fa-magnifying-glass"></i
-        ></a>
+        <div class="header__head">
+          <a class="header__icons" href="#"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <div class="header__humburher">
+            <input class="header__input" type="checkbox" id="toggle" />
+            <label for="toggle" class="header__label">
+              <span class="toggle-btn"></span>
+            </label>
+          </div>
+        </div>
         <a class="header__titel" href="#">Anion</a>
 
         <div class="header__apps">
@@ -67,21 +75,310 @@
           ></a>
         </div>
       </div>
+
       <hr />
       <div class="header__wraper">
         <nav class="header__nav">
           <ul class="header__list">
-            <li class="header__item"><a class="header__posilannya" href="#">Plant pots</a></li>
-            <li class="header__item"><a class="header__posilannya" href="#">Ceramics</a></li>
-            <li class="header__item"><a class="header__posilannya" href="#">Tables</a></li>
-            <li class="header__item"><a class="header__posilannya" href="#">Chairs</a></li>
-            <li class="header__item"><a class="header__posilannya" href="#">Crockery</a></li>
-            <li class="header__item"><a class="header__posilannya" href="#">Tableware</a></li>
-            <li class="header__item"><a class="header__posilannya" href="#">Cutlery</a></li>
+            <li class="header__item">
+              <a class="header__posilannya" href="#">Plant pots</a>
+            </li>
+            <li class="header__item">
+              <a class="header__posilannya" href="#">Ceramics</a>
+            </li>
+            <li class="header__item">
+              <a class="header__posilannya" href="#">Tables</a>
+            </li>
+            <li class="header__item">
+              <a class="header__posilannya" href="#">Chairs</a>
+            </li>
+            <li class="header__item">
+              <a class="header__posilannya" href="#">Crockery</a>
+            </li>
+            <li class="header__item">
+              <a class="header__posilannya" href="#">Tableware</a>
+            </li>
+            <li class="header__item">
+              <a class="header__posilannya" href="#">Cutlery</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
+    <main>
+      <section class="promo">
+        <div class="container">
+          <div class="promo__box">
+            <h1 class="promo__titel">
+              The furniture brand for the <br />
+              future, with timeless designs
+            </h1>
+            <button class="promo__btn">View collection</button>
+            <p class="promo__desc">
+              A new era in eco friendly furniture with Avelon, the French luxury
+              retail brand <br />
+              with nice fonts, tasteful colors and a beautiful way to display
+              things digitally <br />
+              using modern web technologies.
+            </p>
+          </div>
+          <div class="promo__blocks">
+            <img src="./img/Right_trons.png" alt="tron" />
+          </div>
+        </div>
+      </section>
+      <!-- <section class="brand">
+        <div class="container">
+          <h2 class="brand__titel">What makes our brand different</h2>
+          <ul class="brand__list">
+            <li class="brand__item">
+              <i class="fa-solid fa-truck" style="color: #2a254b"></i>
+              <h3 class="brand__subtitel">Next day as standard</h3>
+              <p class="brand__desc">
+                Order before 3pm and get your order the next day as standard
+              </p>
+            </li>
+            <li class="brand__item">
+              <i class="fa-solid fa-check" style="color: #2a254b"></i>
+              <h3 class="brand__subtitel">Made by true artisans</h3>
+              <p class="brand__desc">
+                Handmade crafted goods made with real passion and craftmanship
+              </p>
+            </li>
+            <li class="brand__item">
+              <i class="fa-regular fa-credit-card" style="color: #2a254b"></i>
+              <h3 class="brand__subtitel">Unbeatable prices</h3>
+              <p class="brand__desc">
+                For our materials and quality you won’t find better prices
+                anywhere
+              </p>
+            </li>
+            <li class="brand__item">
+              <i class="fa-solid fa-seedling" style="color: #2a254b"></i>
+              <h3 class="brand__subtitel">Recycled packaging</h3>
+              <p class="brand__desc">
+                We use 100% recycled packaging to ensure our footprint is
+                manageable
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="new">
+        <div class="container">
+          <h2 class="new__titel">New ceramics</h2>
+          <div class="new__blocks">
+            <div class="new__block">
+              <img src="./img/Right_trons.png" alt="tron" />
+              <h3 class="new__subtitel">The Dandy chair</h3>
+              <p class="new__desc">£250</p>
+            </div>
+            <div class="new__block">
+              <img src="./icons/glec.png" alt="tron" />
+              <h3 class="new__subtitel">The Dandy chair</h3>
+              <p class="new__desc">£250</p>
+            </div>
+            <div class="new__block">
+              <img src="./icons/Product-glek.png" alt="tron" />
+              <h3 class="new__subtitel">The Dandy chair</h3>
+              <p class="new__desc">£250</p>
+            </div>
+            <div class="new__block">
+              <img src="./icons/Product-lagh.png" alt="tron" />
+              <h3 class="new__subtitel">The Dandy chair</h3>
+              <p class="new__desc">£250</p>
+            </div>
+          </div>
+          <button class="new__btn">View collection</button>
+        </div>
+      </section>
+      <section class="products">
+        <div class="container">
+          <h2 class="products__titel">Our popular products</h2>
+          <div class="products__blocks">
+            <div class="produckts__block">
+              <img class="products__img" src="./img/Large.png" alt="large" />
+              <h3 class="products__subtitel">The Poplar suede sofa</h3>
+              <p class="products__desc">£980</p>
+            </div>
+            <div class="produckts__block">
+              <img
+                class="products__product"
+                src="./img/Right_trons.png"
+                alt="tron"
+              />
+              <h3 class="products__subtitel">The Dandy chair</h3>
+              <p class="products__desc">£250</p>
+            </div>
+            <div class="produckts__block">
+              <img class="products__product" src="./img/table.png" alt="tron" />
+              <h3 class="products__subtitel">The Dandy chair</h3>
+              <p class="products__desc">£250</p>
+            </div>
+          </div>
+          <button class="products__btn">View collection</button>
+        </div>
+      </section>
+      <section class="join">
+        <div class="cotainer">
+          <h2 class="join__titel">Join the club and get the benefits</h2>
+          <p class="join__desc">
+            Sign up for our newsletter and receive exclusive offers on new
+            <br />
+            ranges, sales, pop up stores and more
+          </p>
+          <form class="join__form">
+            <input
+              type="email"
+              class="join__input"
+              required
+              placeholder="your@email.com"
+            />
+            <button class="join__btn" disabled>Sign up</button>
+          </form>
+        </div>
+      </section>
+      <section class="london">
+        <div class="container">
+          <div class="london__blocks">
+            <div class="london__block">
+              <h2 class="london__titel">
+                From a studio in London to a global brand with <br />
+                over 400 outlets
+              </h2>
+              <p class="london__desc">
+                When we started Avion, the idea was simple. Make high quality
+                furniture <br />
+                affordable and available for the mass market.
+              </p>
+              <p class="london__descripshen">
+                Handmade, and lovingly crafted furniture and homeware is what we
+                live, <br />
+                breathe and design so our Chelsea boutique become the hotbed for
+                the <br />
+                London interior design community.
+              </p>
+              <button class="london__btn" disabled>Get in touch</button>
+            </div>
+            <div class="london__box">
+              <img src="./img/flovers.png" alt="flov" />
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    <!--  <footer class="footer">
+      <div class="container">
+        <div class="footer__div">
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__titel">Menu</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">New arrivals</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Best sellers</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Recently viewed</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Popular this week</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">All products</a>
+              </li>
+            </ul>
+          </div>
+          <div class="Categories">
+            <ul class="Categories__list">
+              <li class="Categories__item">
+                <a href="#" class="Categories__titel">Categories</a>
+              </li>
+              <li class="Categories__item">
+                <a href="#" class="Categories__link">Crockery</a>
+              </li>
+              <li class="Categories__item">
+                <a href="#" class="Categories__link">Furniture</a>
+              </li>
+              <li class="Categories__item">
+                <a href="#" class="Categories__link">Homeware</a>
+              </li>
+              <li class="Categories__item">
+                <a href="#" class="Categories__link">Plant pots</a>
+              </li>
+              <li class="Categories__item">
+                <a href="#" class="Categories__link">Chairs</a>
+              </li>
+              <li class="Categories__item">
+                <a href="#" class="Categories__link">Crockery</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="our">
+            <ul class="our__list">
+              <li class="our__item">
+                <a href="#" class="our__titel">Our company</a>
+              </li>
+              <li class="our__item">
+                <a href="#" class="our__link">About us</a>
+              </li>
+              <li class="our__item">
+                <a href="#" class="our__link">Vacancies</a>
+              </li>
+              <li class="our__item">
+                <a href="#" class="our__link">Contact us</a>
+              </li>
+              <li class="our__item">
+                <a href="#" class="our__link">Privacy</a>
+              </li>
+              <li class="our__item">
+                <a href="#" class="our__link">Returns policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <label class="footer__label">Join our mailing list</label>
+            <form class="footer__form">
+              <input
+                type="email"
+                class="footer__input"
+                required
+                placeholder="your@email.com"
+              />
+              <button class="footer__btn" disabled>Sign up</button>
+            </form>
+          </div>
+        </div>
+        <hr class="footer__hr" />
+        <div class="plasa">
+          <h3 class="plasa__titel">Copyright 2022 Avion LTD</h3>
+          <ul class="plasa__list">
+            <li class="plasa__item">
+              <a href="#" class="plasa__link"
+                ><i class="fa-brands fa-linkedin-in" style="color: #ffffff"></i
+              ></a>
+            </li>
+            <li class="plasa__item">
+              <a href="#" class="plasa__link"
+                ><i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+              </a>
+            </li>
+            <li class="plasa__item">
+              <a href="#" class="plasa__link"
+                ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+              ></a>
+            </li>
+            <li class="plasa__item"><a href="#" class="plasa__link"><i class="fa-brands fa-skype" style="color: #ffffff;"></i></a></li>
+            <li class="plasa__item"><a href="#" class="plasa__link"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+            <li class="plasa__item"><a href="#" class="plasa__link"><i class="fa-brands fa-pinterest" style="color: #ffffff;"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer> -->
     <script
       src="https://kit.fontawesome.com/efe48aa025.js"
       crossorigin="anonymous"

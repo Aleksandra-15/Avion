@@ -1,10 +1,19 @@
 .header {
-
-
   &__apps {
     display: flex;
     justify-content: flex-end;
     gap: 16px;
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+  &__head{
+    display: flex;
+    gap: 20px;
+    align-items:center;
+  }
+  hr {
+    width: 100%;
   }
   &__wrapper {
     display: flex;
@@ -12,22 +21,100 @@
     justify-content: space-between;
     height: 70px;
     margin: 0;
+    @media (max-width: 480px) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    /*     @media (max-width: 345px) {
+      justify-content: flex-end;
+      align-items: center;
+      gap: 229px;
+      display: flex;Ї */
   }
-  &__list{
+  &__list {
     display: flex;
     align-items: center;
-   justify-content: center;
+    justify-content: center;
     gap: 44px;
+    @media (max-width: 480px) {
+      display: none;
+    }
   }
- &__posilannya{
+  &__posilannya {
     @include desc($color_2, 16px);
-
- }
+  }
   &__titel {
     @include titel($color_1, 24px);
     text-align: center;
   }
+
   &__icons {
     color: $color_1;
+  }
+  input[type="checkbox"],
+  label {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    label {
+      height: 3px;
+      display: block;
+      width: 30px;
+      position: relative;
+      cursor: pointer;
+    }
+    span,
+    span::after,
+    span::before {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 2px;
+      background: black;
+      position: absolute;
+      right: 0;
+      transition: 0.5s;
+    }
+    span::after {
+      top: 5px;
+    }
+    span::before {
+      top: -5px;
+    }
+    &__humburher {
+      display: flex;
+      align-items: flex-end;
+      @media (min-width:768px) {
+        display: none;
+      }
+    }
+    &__nav {
+      position: absolute;
+      top: 0;
+      margin: 0;
+      width: 50%;
+      height: 100vh;
+      left: -100%;
+      padding: 20px;
+      transition: 0.5s;
+      background: var(--Dark-Primary, #2a254b);
+      box-shadow: 0 12px 20px #00000033;
+    }
+    input[type="checkbox"]:checked ~ label span {
+      transform: rotate(-45deg);
+    }
+    input[type="checkbox"]:checked ~ label span::after {
+      transform: rotate(0);
+      top: 0;
+    }
+    input[type="checkbox"]:checked ~ label span::before {
+      transform: rotate(90deg);
+      top: 0;
+    }
+    input[type="checkbox"]:checked ~ .header__nav {
+      display: block;
+      left: 0;
+    }
   }
 }

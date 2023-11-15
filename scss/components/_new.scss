@@ -1,0 +1,38 @@
+.new {
+  img {
+    height: 375px;
+    width: 305px;
+    object-fit: cover;
+  }
+  &__titel {
+    @include titel($color_4, 32px);
+    color: var(--Dark-Primary, #2a254b);
+    line-height: normal;
+  }
+  &__subtitel {
+    @include titel($color_4, 20px);
+    line-height: 140%;
+    color: var(--Dark-Primary, #2a254b);
+  }
+  &__desc {
+    @include desc($color_4, 18px);
+    line-height: 150%;
+  }
+  &__blocks {
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__btn {
+    @include desc($color_4, 16px);
+
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    background: var(--Light-Grey, #f9f9f9);
+    border: 0;
+    width: 170px;
+    height: 56px;
+  }
+}
